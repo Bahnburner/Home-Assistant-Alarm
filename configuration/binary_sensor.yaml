@@ -1,0 +1,8 @@
+- platform: rpi_gpio
+  ports:
+    4: Front Door
+    18: Garage Door
+    17: Back Door
+    27: Front Windows
+    22: Bedroom Windows
+    6: Back Windows

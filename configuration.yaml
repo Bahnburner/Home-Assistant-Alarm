@@ -1,0 +1,26 @@
+homeassistant:
+  name: Hidden Ridge Alarm
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: 360
+  unit_system: imperial
+  time_zone: America/Chicago
+  customize: !include_dir_merge_named customize
+
+frontend:
+updater:
+recorder:
+history:
+logbook:
+http: !include ./configuration/http.yaml
+binary_sensor: !include ./configuration/binary_sensor.yaml
+
+group:
+  zones:
+    - binary_sensor.front_door
+    - binary_sensor.garage_door
+    - binary_sensor.front_windows
+    - binary_sensor.back_door
+    - binary_sensor.back_windows
+    - binary_sensor.bedroom_windows
+
