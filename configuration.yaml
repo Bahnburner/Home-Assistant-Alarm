@@ -30,4 +30,10 @@ group:
     - binary_sensor.back_door
     - binary_sensor.back_windows
     - binary_sensor.bedroom_windows
-
+  mqtt:
+    - binary_sensor.front_door__MQTT
+    - binary_sensor.garage_door__MQTT
+    - binary_sensor.front_windows__MQTT
+    - binary_sensor.back_door__MQTT
+    - binary_sensor.back_windows__MQTT
+    - binary_sensor.bedroom_windows__MQTT
