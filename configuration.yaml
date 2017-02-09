@@ -14,6 +14,13 @@ history:
 logbook:
 http: !include ./configuration/http.yaml
 binary_sensor: !include ./configuration/binary_sensor.yaml
+mqtt:
+  broker: 10.0.0.212
+  birth_message:
+    topic: 'hass/status'
+    payload: 'online'
+    qos: 1
+    retain: true
 
 group:
   zones:
