@@ -7,7 +7,7 @@
     22: Bedroom Windows
     6: Back Windows
 - platform: mqtt
-  name: "Front Door"
+  name: "Front Door - MQTT"
   sensor_class: opening
   state_topic: "/rpi-alarm/out/7"
   payload_on: "1"
