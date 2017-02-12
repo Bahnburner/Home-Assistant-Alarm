@@ -1,44 +1,8 @@
 - platform: rpi_gpio
   ports:
-    4: Front Door
-    18: Garage Door
-    17: Back Door
-    27: Front Windows
-    22: Bedroom Windows
-    6: Back Windows
-- platform: mqtt
-  name: "Front Door - MQTT"
-  sensor_class: opening
-  state_topic: "/rpi-alarm/out/7"
-  payload_on: "1"
-  payload_off: "0"
-- platform: mqtt
-  name: "Garage Door - MQTT"
-  sensor_class: opening
-  state_topic: "/rpi-alarm/out/12"
-  payload_on: "1"
-  payload_off: "0"
-- platform: mqtt
-  name: "Back Door - MQTT"
-  sensor_class: opening
-  state_topic: "/rpi-alarm/out/11"
-  payload_on: "1"
-  payload_off: "0"
-- platform: mqtt
-  name: "Front Windows - MQTT"
-  sensor_class: opening
-  state_topic: "/rpi-alarm/out/13"
-  payload_on: "1"
-  payload_off: "0"
-- platform: mqtt
-  name: "Bedroom Windows - MQTT"
-  sensor_class: opening
-  state_topic: "/rpi-alarm/out/15"
-  payload_on: "1"
-  payload_off: "0"
-- platform: mqtt
-  name: "Back Windows - MQTT"
-  sensor_class: opening
-  state_topic: "/rpi-alarm/out/31"
-  payload_on: "1"
-  payload_off: "0"
+    18: Front Door
+    6: Front Windows
+    27: Garage Door
+    4: Back Door
+    22: Back Windows
+    17: Bedroom Windows
